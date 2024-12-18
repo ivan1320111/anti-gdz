@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8" />
+  <title>anti-gdz</title>
+</head>
+<body>
+<div align="center">
+<p>3^2=</p>
+<input id="UserInput" type="text"/>
+<button onclick="check()">submit</button>
+
+
+</div>
+
+<script>
+
+
+function check(){
+    var UserInput = document.getElementById("UserInput").value
+    console.log("check")
+    console.log(UserInput)
+    if(UserInput == 9){
+        alert("unlocked")
+        console.log("unlocked") 
+        stop()
+    } else {
+        alert("incorret!")
+        console.log("incorrect")
+    }
+}
+
+
+</script>
+</body>
+</html>
